@@ -50,8 +50,7 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [
-              { from: 'src/assets/public/img', to: 'assets/public/img' },
-              { from: 'src/assets/public/icons', to: 'assets/public/icons' },
+              { from: 'src/assets/public/img', to: 'assets/public/img' }
             ],
           }),
     ]

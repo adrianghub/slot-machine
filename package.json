@@ -37,5 +37,12 @@
   },
   "dependencies": {
     "@babel/preset-env": "^7.9.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianGHub/slot-machine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AdrianGHub/slot-machine/issues"
   }
 }
