@@ -1,0 +1,76 @@
+.play-ui {
+    text-align: center;
+     margin: 40px;
+   
+     &__input{
+       height: 45px;
+       font-size: 16px;
+       padding: 20px;
+       width: 80%;
+      min-width: 200px;
+       border: 3px solid black;
+       text-align: center;
+        border-radius: 5px;
+        border: 0; 
+        border: 1px solid transparent; 
+        border-bottom-color: #ccc; 
+        transition: border-bottom .2s ease-in;
+   
+        
+      @media(min-width: 550px) {
+       width: 400px;
+       font-size: 30px;
+       margin-right: 40px;
+       height: 90px;
+       }
+   
+       @media (max-width: 1024px) {
+            height: 70px;
+            font-size: 30px;
+            display: block;
+            margin: 20px auto;
+          }
+   
+       &:focus {
+           outline: none;
+           border-bottom: 4px solid #F975F7; 
+         }
+   
+      }
+      
+      &__button {
+       width: 40%;
+       height:90px;
+       text-align: center;
+       padding: 20px 60px;
+       font-size: 40px;
+       text-transform: uppercase;
+       background-color: #333;
+       border: none;
+       color: white;
+       cursor: pointer;
+       letter-spacing: 6px;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.3s ease 0s;
+   
+        @media (max-width: 1024px) {
+            height: 74px;
+            font-size: 30px;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 20px ;
+          }
+   
+        &:hover {
+           color: #494949;
+         border-radius: 50px;
+         transition: all 0.3s ease 0s;
+         }
+      }
+   }
+   
+   fa-play {
+     color: #fafafa
+   }

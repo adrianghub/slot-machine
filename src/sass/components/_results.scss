@@ -1,0 +1,20 @@
+.panel {
+    margin: 40px 0 40px;
+    font-size: 26px;
+   }
+   
+   .panel, .score {
+    font-size: 16px;
+     color: #fafafa;
+     font-family: 'press start 2p';
+   
+   }
+   .panel span, .score span {
+    font-weight: bold;
+     color: #F975F7;
+   }
+
+   .score__result {
+    margin: 20px 0;
+    color: #F975F7;
+   }
