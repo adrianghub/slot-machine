@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Retro Slot Machine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link href="main-140676d741b9081a5984.css" rel="stylesheet"></head>
+
+<body>
+  <main class="machine">
+
+    <h1 class="machine__heading">Slot Machine</h1>
+    <h3 class="pink-text">AdrianGHub</h3>
+    <section class="gameboard">
+      <div class="gameboard__card" data-board></div>
+      <div class="gameboard__card" data-board></div>
+      <div class="gameboard__card" data-board></div>
+    </section>
+
+    <section class="play-ui">
+      <input class="play-ui__input" type="number" placeholder="Enter your bid" id="bid" data-bid>
+      <button class="play-ui__button "id="start" data-button><i class="fa fa-play"></i></button>
+    </section>
+
+    <section class="panel">AMOUNT OF MONEY YOU HAVE BEFORE THE NEXT GAME: <span class="panel__wallet" data-wallet></span></section>
+
+    <section class="score">
+      <p class="score__result" data-result></p> You've passed <span class="score__number" data-number></span> plays, including <span class="score__win" data-wins></span> won
+      and <span class="score__loss" data-losses></span> lost
+    </section>
+  </main>
+<script src="main-140676d741b9081a5984.bundle.js"></script></body>
+
+</html>
