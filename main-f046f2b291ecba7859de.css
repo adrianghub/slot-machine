@@ -170,7 +170,8 @@ fa-play {
   font-size: 30px;
   border: none;
   cursor: pointer;
-  transition: box-shadow .3s ease-in; }
+  transition: box-shadow .3s ease-in;
+  outline: none; }
   .repeat-button:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
   @media (min-width: 380px) {
