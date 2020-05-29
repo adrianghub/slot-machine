@@ -1,6 +1,6 @@
 # Retro Slot Machine :cherries: :grapes: :seven:
 
-> You've just earned 200$ so you decide to make some fun with it (ideally win more). In order to succeed in this game you have to draw 3 identiacal cards. 
+> You've just earned 200$ so you decide to make some fun with it (ideally win more). In order to succeed in this game, you have to draw 3 identical cards.
 > It's time to play! Wish you luck :innocent: 
 
 <p style="text-align: center;">
