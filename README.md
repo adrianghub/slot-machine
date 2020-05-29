@@ -3,6 +3,7 @@
 > You've just earned 200$ so you decide to make some fun with it (ideally win more). In order to succeed in this game you have to draw 3 identiacal cards. 
 > It's time to play! Wish you luck :innocent: 
 
+<p style="text-align: center;">
   <img src="https://github.com/AdrianGHub/slot-machine/blob/master/src/assets/public/github/slot-machine.png" alt="Slot machine capture."/>
 </p>
 
