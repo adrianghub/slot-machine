@@ -74,3 +74,28 @@
    fa-play {
      color: #fafafa
    }
+
+   .repeat-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    transition: box-shadow .3s ease-in;
+
+    &:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    @media(min-width: 380px) {
+      top: 90px;
+    }
+    @media(min-width: 710px) {
+      top: 140px;
+    }
+    @media(min-width: 1024px) {
+      top: 120px;
+      right: 100px;
+    }
+   }

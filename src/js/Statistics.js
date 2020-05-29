@@ -11,7 +11,7 @@ export default class Statistics {
         win,
         bid
       }
-      console.log(gameResult);
+      // console.log(gameResult);
       this.gameResults.push(gameResult);
     }
     

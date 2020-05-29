@@ -11,6 +11,7 @@ export default class Game {
       this.wallet = new Wallet(start);
       
       this.UISelectors =  {
+        buttonRepeat: '[data-repeat]',
         button: '[data-button]',
         spanWallet: '[data-wallet]',
         boards: '[data-board]',
@@ -24,6 +25,11 @@ export default class Game {
       this.initializeGame();
       
       this.render();
+
+      this.buttonRepeat.addEventListener('click', () => {
+        this.wallet = new Wallet(200);
+        this.render();
+      });
     }
       
     render(boards = ['./assets/public/img/diamond.png', './assets/public/img/diamond.png', './assets/public/img/diamond.png'], money = this.wallet.getWalletValue(),result = "", stats = [0, 0, 0], bid = 0, wonMoney = 0) {
@@ -49,6 +55,7 @@ export default class Game {
     };
     
     initializeGame() {
+      this.buttonRepeat = document.querySelector(this.UISelectors.buttonRepeat);
       this.button = document.querySelector(this.UISelectors.button);
       this.spanWallet = document.querySelector(this.UISelectors.spanWallet);
       this.boards = [...document.querySelectorAll(this.UISelectors.boards)];
