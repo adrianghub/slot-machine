@@ -6,9 +6,9 @@ import Result from './Result';
 
 export default class Game {
 
-    constructor(start) {
+    constructor(startMoney) {
       this.stats = new Statistics();
-      this.wallet = new Wallet(start);
+      this.wallet = new Wallet(startMoney);
       
       this.UISelectors =  {
         buttonRed: '[data-red]', 
@@ -28,13 +28,13 @@ export default class Game {
       this.render();
 
       this.buttonRepeat.addEventListener('click', () => {
-        this.wallet = new Wallet(200);
+        this.wallet = new Wallet(startMoney);
         this.render();
       });
 
       this.redButton.addEventListener('click', () => {
         this.wallet = new Wallet(100);
-        this.render();
+        this.render(this.stats = new Statistics());
       });
     }
       
