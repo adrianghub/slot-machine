@@ -11,6 +11,7 @@ export default class Game {
       this.wallet = new Wallet(start);
       
       this.UISelectors =  {
+        buttonRed: '[data-red]', 
         buttonRepeat: '[data-repeat]',
         button: '[data-button]',
         spanWallet: '[data-wallet]',
@@ -28,6 +29,11 @@ export default class Game {
 
       this.buttonRepeat.addEventListener('click', () => {
         this.wallet = new Wallet(200);
+        this.render();
+      });
+
+      this.redButton.addEventListener('click', () => {
+        this.wallet = new Wallet(100);
         this.render();
       });
     }
@@ -55,6 +61,7 @@ export default class Game {
     };
     
     initializeGame() {
+      this.redButton = document.querySelector(this.UISelectors.buttonRed);
       this.buttonRepeat = document.querySelector(this.UISelectors.buttonRepeat);
       this.button = document.querySelector(this.UISelectors.button);
       this.spanWallet = document.querySelector(this.UISelectors.spanWallet);
