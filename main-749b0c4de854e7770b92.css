@@ -65,6 +65,77 @@ body {
   100% {
     background-position: 300px 0; } }
 
+.red-button {
+  display: none; }
+
+@media (min-width: 1400px) {
+  .cleared-text {
+    color: #F975F7;
+    font-weight: bold;
+    display: block;
+    position: absolute;
+    top: 40%;
+    right: -100%;
+    margin-top: 130px;
+    text-align: center;
+    margin-left: 1.5rem;
+    z-index: 999;
+    font-size: 12rem;
+    opacity: 0;
+    transition: all 0.4s ease-out; }
+  .red-button {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+    margin-top: -50px;
+    left: 10%;
+    top: 10%;
+    position: absolute;
+    background: #e55050;
+    border-radius: 100px;
+    outline: none;
+    box-shadow: inset -2px 2px 2px 0px #ef9393, inset 2px -2px 2px 0px rgba(113, 17, 17, 0.3), inset 0px 0px 40px 15px #de2424, 1px 1px 0 0 #d32020, 2px 2px 0 0 #c61e1e, 3px 3px 0 0 #b81c1c, 4px 4px 0 0 #ab1a1a, 5px 5px 0 0 #9e1818, 6px 6px 0 0 #901616, 7px 7px 0 0 #881414, 8px 8px 0 0 #831414, 9px 9px 0 0 #7f1313, 10px 10px 0 0 #7a1212, 11px 11px 0 0 #761212, 12px 12px 0 0 #711111, 13px 13px 0 0 #711111, 14px 14px 0 0 #711111, 15px 15px 0 0 #711111, 16px 16px 0 0 #711111, 17px 17px 0 0 #711111, 18px 18px 0 0 #711111, 19px 19px 0 0 #711111, 20px 20px 0 0 #711111, 19px 21px 1pc 1px rgba(113, 17, 17, 0.1), 18px 22px 1px 1px rgba(113, 17, 17, 0.1), 17px 23px 1px 1px rgba(113, 17, 17, 0.1), 16px 24px 1px 1px rgba(113, 17, 17, 0.1), 15px 25px 1px 1px rgba(113, 17, 17, 0.1), 14px 26px 2px 1px rgba(113, 17, 17, 0.1), 13px 27px 3px 1px rgba(113, 17, 17, 0.1), 12px 28px 4px 1px rgba(113, 17, 17, 0.1), 11px 29px 5px 1px rgba(113, 17, 17, 0.1), 10px 30px 6px 1px rgba(113, 17, 17, 0.1), 9px 31px 7px 1px rgba(113, 17, 17, 0.1), 20px 20px 4px 1px #711111;
+    transition: all 0.4s ease-out;
+    cursor: pointer; }
+    .red-button:active {
+      transition: all 0.15s ease-out;
+      margin-left: -31px;
+      margin-top: -31px;
+      background: #e86666;
+      box-shadow: inset -2px 2px 2px 0px #ef9393, inset 2px -2px 2px 0px rgba(113, 17, 17, 0.3), inset 0px 0px 40px 15px #de2424, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 0 0 #711111, 1px 1px 2px 1px rgba(113, 17, 17, 0.5), 0px 0px 4px 1px #711111; }
+      .red-button:active ~ p {
+        opacity: 1;
+        transition: all 0.15s ease-out;
+        transition-delay: 0.25s;
+        transform: translate3d(-80%, -80%, 0) rotate(-30deg); }
+      .red-button:active ~ .blur {
+        width: 100%;
+        height: 100%; } }
+
+.repeat-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow .3s ease-in;
+  outline: none; }
+  .repeat-button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  @media (min-width: 380px) {
+    .repeat-button {
+      top: 90px; } }
+  @media (min-width: 710px) {
+    .repeat-button {
+      top: 140px; } }
+  @media (min-width: 1024px) {
+    .repeat-button {
+      top: 120px;
+      right: 100px; } }
+
 .pink-text {
   display: none; }
   @media (min-width: 1024px) {
